@@ -1,0 +1,82 @@
+@import '../General/variables';
+.custom-control-label {
+    position: relative;
+    margin-left: 52px;
+    padding-left: 27px;
+    margin-bottom: 0;
+    vertical-align: top;
+}
+.custom-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+.custom-switch{
+    padding-left: 0;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+    color: #fff;
+    border-color: rgba(163,168,240,1);
+    background: $linear-gradient;
+}
+h1{
+    text-align: center;
+    font-family: $main-font;
+    font-weight: 700;
+    font-size: 36px;
+    color: $gray-color;
+}
+.custom-switch .custom-control-label::before{
+    background: $linear-gradient;
+} 
+  
+.custom-switch .custom-control-label::before {
+    left: -2.25rem;
+    height: 1.6rem;
+    width: 3rem;    // it was 1.75rem before. Sliding way is longer than before.
+    pointer-events: all;
+    border-radius: 1rem;
+}
+  
+.custom-switch .custom-control-label::after {
+    top: calc(0.25rem + 2px);
+    left: calc(-0.85rem + 2px);
+    width: calc(1.5rem - 3px);   // it was calc(1rem - 4px) before. Oval is bigger than before.
+    height: calc(1.5rem - 3px);  // it was calc(1rem - 4px) before. Oval is bigger than before.
+    background-color: #fff;
+    border-radius: 2rem; //   it was 0.5rem before. Oval is bigger than before.
+    transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after{
+    transform: translateX(-1.4rem);
+}
+@media (prefers-reduced-motion: reduce) {
+    .custom-switch .custom-control-label::after {
+      transition: none;
+    }
+}
+  
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+    background-color: #fff;
+    -webkit-transform: translateX(1.4rem); //translateX(0.75rem);
+    transform: translateX(1.4rem); //translateX(0.75rem);
+}
+.custom-control-label { // added for alignment with the switch
+    padding-top: 0.3rem;
+    padding-left: 2rem;
+    padding-bottom: 0.1rem;
+  }
+label{
+    font-family: $main-font;
+    font-size: $font-size;
+    margin-bottom: 0;
+    padding-top: 0.3rem;
+    padding-bottom: 0.1rem;
+    color: $gray-light-color;
+}

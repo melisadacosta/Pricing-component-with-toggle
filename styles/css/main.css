@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+.custom-control-label {
+  position: relative;
+  margin-left: 52px;
+  padding-left: 27px;
+  margin-bottom: 0;
+  vertical-align: top;
+}
+
+.custom-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.custom-switch {
+  padding-left: 0;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  color: #fff;
+  border-color: #a3a8f0;
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+
+h1 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: #6d708d;
+}
+
+.custom-switch .custom-control-label::before {
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+
+.custom-switch .custom-control-label::before {
+  left: -2.25rem;
+  height: 1.6rem;
+  width: 3rem;
+  pointer-events: all;
+  border-radius: 1rem;
+}
+
+.custom-switch .custom-control-label::after {
+  top: calc(0.25rem + 2px);
+  left: calc(-0.85rem + 2px);
+  width: calc(1.5rem - 3px);
+  height: calc(1.5rem - 3px);
+  background-color: #fff;
+  border-radius: 2rem;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  transform: translateX(-1.4rem);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .custom-switch .custom-control-label::after {
+    transition: none;
+  }
+}
+.custom-switch .custom-control-input:checked ~ .custom-control-label::after {
+  background-color: #fff;
+  -webkit-transform: translateX(1.4rem);
+  transform: translateX(1.4rem);
+}
+
+.custom-control-label {
+  padding-top: 0.3rem;
+  padding-left: 2rem;
+  padding-bottom: 0.1rem;
+}
+
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  margin-bottom: 0;
+  padding-top: 0.3rem;
+  padding-bottom: 0.1rem;
+  color: #b3b5c6;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+  border: none;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  padding: 10px 12px;
+}
+.btn-primary:hover {
+  background: none;
+  color: #696fdd;
+  border: 1px solid #696fdd;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 10px 10px 17px -5px rgba(158, 161, 184, 0.54);
+  -moz-box-shadow: 10px 10px 17px -5px rgba(158, 161, 184, 0.54);
+  margin-bottom: 60px;
+}
+.card h1 {
+  font-size: 60px;
+  color: #494c5f;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #b3b5c6;
+  margin-bottom: 0px;
+}
+.card .card-title, .card .card-text {
+  font-size: 15px;
+  color: #6d708d;
+  font-weight: 700;
+}
+.card .card-text {
+  border-bottom: 1px solid #b3b5c6;
+  margin: 0;
+  padding: 10px 0px;
+}
+
+.basic {
+  -webkit-box-shadow: -10px 10px 17px -5px rgba(158, 161, 184, 0.54);
+  -moz-box-shadow: -10px 10px 17px -5px rgba(158, 161, 184, 0.54);
+}
+
+.professional-card {
+  background: linear-gradient(90deg, #a3a8f0 0%, #696fdd 100%);
+}
+.professional-card .professional-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.professional-card .professional-body h1, .professional-card .professional-body .card-text, .professional-card .professional-body .card-title {
+  color: #fff;
+}
+.professional-card .professional-body .btn-primary {
+  background: #fff;
+  color: #696fdd;
+}
+.professional-card .professional-body .btn-primary:hover {
+  color: #fff;
+  border: 1px solid #fff;
+  background: none;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  margin-top: 25px;
+  background: url(../../img/bg-top.svg) top right no-repeat, url(../../img/bg-bottom.svg) bottom left no-repeat;
+  background-color: #f6f6fe;
+}
+
+/*# sourceMappingURL=main.css.map */
