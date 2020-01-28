@@ -27,6 +27,8 @@
 }
 .professional-card{
      background: $linear-gradient;
+     width: 19rem; 
+     height: 28rem;
      .professional-body{
          display: flex;
          flex-direction: column;
@@ -48,4 +50,14 @@
 }
 .hidden{
     display: none;
+}
+
+
+@media (max-width: 992px){
+    .card-responsive{
+        flex-direction: column !important;
+    }
+    .professional-card{
+        height: 26rem;
+    }
 }

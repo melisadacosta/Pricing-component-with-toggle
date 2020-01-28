@@ -4,3 +4,11 @@ body{
     url(../../img/bg-bottom.svg) bottom left no-repeat;
     background-color: hsl(240, 78%, 98%);
 }
+
+@media (max-width:576px){
+    body{
+        background-image: url(../../img/bg-top.svg);
+        background-position-x: 286%;
+        background-position-y: -4%;
+    }
+}

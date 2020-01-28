@@ -64,10 +64,10 @@ h1{
   
 .custom-switch .custom-control-input:checked ~ .custom-control-label::after {
     background-color: #fff;
-    -webkit-transform: translateX(1.4rem); //translateX(0.75rem);
-    transform: translateX(1.4rem); //translateX(0.75rem);
+    -webkit-transform: translateX(-1.4rem); 
+    transform: translateX(-1.4rem); 
 }
-.custom-control-label { // added for alignment with the switch
+.custom-control-label { 
     padding-top: 0.3rem;
     padding-left: 2rem;
     padding-bottom: 0.1rem;
@@ -79,4 +79,10 @@ label{
     padding-top: 0.3rem;
     padding-bottom: 0.1rem;
     color: $gray-light-color;
+}
+
+@media (max-width:576px){
+    h1{
+        font-size: 30px;
+    }
 }
